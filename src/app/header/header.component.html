@@ -1,0 +1,34 @@
+<section>
+  <mat-toolbar color="primary" class="toolbar">
+    <mat-icon>code</mat-icon>
+    <span
+      class="menuList"
+      *ngIf="currentScreenSize !== 'Small' && currentScreenSize !== 'XSmall'"
+    >
+      <a href="#home"> HOME </a>
+      <a href="#"> SOBRE MIM </a>
+      <a href="#"> PORTIFOLIO </a>
+      <a href="#"> SERVIÇOS </a>
+      <a href="#"> EXPIRENCIA </a>
+      <button class="button">CONTATO</button>
+    </span>
+    <span
+      *ngIf="currentScreenSize === 'Small' || currentScreenSize === 'XSmall'"
+    >
+      <mat-icon class="menu" [matMenuTriggerFor]="menu">menu</mat-icon>
+      <!-- <button class="button" >
+    </button> -->
+      <mat-menu class="menuSide" #menu="matMenu">
+        <a href="#home"> HOME </a>
+        <a href="#"> SOBRE MIM </a>
+        <a href="#"> PORTIFOLIO </a>
+        <a href="#"> SERVIÇOS </a>
+        <a href="#"> EXPIRENCIA </a>
+        <button class="button">CONTATO</button>
+      </mat-menu>
+    </span>
+  </mat-toolbar>
+  <section class="img">
+    <img src="assets/title.png" alt="imagem" />
+  </section>
+</section>

@@ -1,0 +1,73 @@
+@import '/src/styles.scss';
+
+.img {
+  background-color: $primary;
+  padding: 0 4rem;
+
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+}
+
+
+.menuList {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+  a {
+    color: #FFFFFF;
+  }
+
+}
+
+.button {
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgb(79, 156, 208);
+  background: $button-gradient;
+  border: none;
+  color: #FFFFFF;
+}
+
+::ng-deep.mat-mdc-menu-panel {
+  border-radius: 1rem !important;
+}
+
+::ng-deep.mat-mdc-menu-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem !important;
+  text-align: right;
+  padding: 1rem !important;
+  gap: 0.5rem;
+  background-color: rgba($primary, 0.9);
+
+
+
+  a {
+    color: #FFF;
+    padding: 0 1rem;
+    font-weight: 500;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  cursor: pointer;
+}
